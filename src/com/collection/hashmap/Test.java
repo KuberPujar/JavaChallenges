@@ -18,6 +18,9 @@ public class Test {
 		for (String s : r) {
 			System.out.println(s);
 		}
+		
+		String str="1";
+		System.out.println(str.length());
 	}
 
 	String bookName;

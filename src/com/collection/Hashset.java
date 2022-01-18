@@ -44,11 +44,11 @@ public class Hashset {
 			} else {
 				HashSet<String> p = map.get(i);
 				ht.retainAll(p);
-				o.addAll(ht);
+				
 			}
 
 		}
-
+		o.addAll(ht);
 		Iterator<String> yy = o.iterator();
 		StringBuilder st = new StringBuilder();
 		while (yy.hasNext()) {
@@ -130,11 +130,11 @@ while(bb.hasNext())
 			} else {
 				HashSet<String> p = map.get(i);
 				ht.retainAll(p);
-				o.addAll(ht);
+				
 			}
 
 		}
-
+		o.addAll(ht);
 		Iterator<String> yy = o.iterator();
 		StringBuilder st = new StringBuilder();
 		while (yy.hasNext()) {
@@ -174,7 +174,15 @@ while(bb.hasNext())
 		 String[] stringArray = st.toString().split(", ");
 	        String actual = sortItOut(stringArray[0])+sortItOut(stringArray[1]);
 	        System.out.println(actual.hashCode());
+	        
+	        String str1="Jeje Sunil Karanjit Vishal, Borges Dessai Nikhil Manvir Mercado Raynier Udanta Fernandes Amarjit Casco";
+	        String[] stringArray1 = str1.toString().split(", ");
+	        String actual1 = sortItOut(stringArray1[0])+sortItOut(stringArray1[1]);
+	        System.out.println(actual1.hashCode());
 	}
+	
+	
+	
 	 static  HSPresent hsp = new HSPresent();
     public static String sortItOut(String hash) throws IOException
     {
@@ -191,4 +199,6 @@ while(bb.hasNext())
         }
         return null;
     }
+    
+    
 }
